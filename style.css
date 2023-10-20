@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: rgb(54, 100, 100);
+    --color-danger: #F44336;
+    --color-success: #4CAF50;
+    --color-warning: #FFC107;
+    --color-info: rgb(36, 100, 73);
+    --color-info-dark: #7d8da1;
+    --color-white: #FFFFFF;
+    --color-white2: #FFFFFF;
+    --color-black: #000000;
+    --color-dark: #212121;
+    --color-dark-varient: #b6b6b6;
+    --color-light: rgba(132, 139, 200, 0.2);
+    --color-background: #F6F6F9;
+
+    --border-radius: 0.5rem;
+    --border-radius-sm: 0.25rem;
+    --border-radius-l: 1rem;
+
+    --padding: 1.2rem;
+    --padding-sm: 0.8rem;
+    --padding-l: 1.8rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow1: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-info-dark); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-info)
+}
+
+.dark-mode-variables {
+    --color-background: #181a1e;
+    --color-dark: #edeffd;
+    --color-white: #202528;
+    --color-dark-varient: #546068;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-l);
+  }
+  
+.dark-mode span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode span.active {
+  background-color: var(--color-primary);
+  color: var(--color-white2);
+  border-radius: var(--border-radius-l);
+}
+
+body {
+    font-family:'Popins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+    margin: 55px 0 0 0;
+    flex-direction: column;
+    background-color: var(--color-background);
+    user-select: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: var(--color-dark);
+}
+
+.header h1 {
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    border: 2px solid var(--color-light);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: var(--color-dark-varient);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: var(--color-white);
+}
+
+.column-header {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 6px 8px 6px 12px;
+    background-color: transparent;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    cursor: pointer;
+    z-index: 1;
+    text-shadow: -1px 0 2px #000, 2px 0 1px #000, 1px 0 2px #000, 2px 0 1px #000;
+}
+
+.card {
+    color: var(--color-black);
+    background-color: #f9f9f9;
+    border: 1px solid #181a1e;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px 0;
+    cursor: move;
+    user-select: text;
+}
+
+.column div:nth-child(2) {
+    margin-top: 25px;
+}
+
+.context-menu {
+    position: absolute;
+    left: 357px;
+    top: 132px;
+    color: white;
+    font-weight: 600;
+    font-family: monospace;
+    background-color: red;
+    border: black solid 2px;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav a:last-child {
+    position: absolute;
+    right: 0;
+    padding: 2px 10px;
+    border: solid 2px #117964;
+    border-radius: 15px;
+}
+
+#About {
+    display: flex;
+    justify-content: center;
+}
+
+#AboutFunction {
+    color: var(--color-dark);
+}
+
+.aboutme {
+    color: var(--color-dark);
+    border: solid 2px #117964;
+    border-radius: 15px;
+    max-height: 200px;
+    display: table;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; margin: 10px;
+}
+
+.aboutme p {
+    font-size: 18px;
+}
+
+.aboutme h3 {
+    font-size: 24px;
+}
+
+.aboutme a {
+    font-size: 20px;
+}
