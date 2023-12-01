@@ -7,7 +7,7 @@ darkMode.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('container');
-    const savedDatas = JSON.parse(localStorage.getItem('savedDatas1'));
+    const savedDatas = JSON.parse(localStorage.getItem('savedDatas2'));
 
     // title, color ve images bilgileri
     const columns = [
