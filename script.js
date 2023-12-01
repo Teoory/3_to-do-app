@@ -7,7 +7,7 @@ darkMode.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('container');
-    const savedDatas = JSON.parse(localStorage.getItem('savedDatas'));
+    const savedDatas = JSON.parse(localStorage.getItem('savedDatas1'));
 
     // title, color ve images bilgileri
     const columns = [
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const columnDiv = document.createElement('div');
         columnDiv.classList.add('column');
         columnDiv.style.borderColor = column.color;
+        columnDiv.style.backgroundColor = column.color;
         columnDiv.style.color = column.color;
         columnDiv.style.backgroundImage = column.images;
         columnDiv.innerHTML = `
@@ -124,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // oluşturulan kartın border rengini, bulunduğu sütunun rengine ayarla
         const columnColor = window.getComputedStyle(column).borderColor;
         card.style.borderColor = columnColor;
-
+        
         column.appendChild(card);
         saveData();
     }
