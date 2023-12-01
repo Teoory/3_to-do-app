@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // title, color ve images bilgileri
     const columns = [
-        { title: 'Notes', color: '#FFC864', images: 'url(/src/images/1-notes.jpg)'},
-        { title: 'To Do', color: '#FF6347', images: 'url(/src/images/2-todo.jpg)' },
-        { title: 'Progress', color: '#20B2AA', images: 'url(/src/images/3-progress.jpg)' },
-        { title: 'Bugs', color: '#FF4500', images: 'url(/src/images/4-bugs.jpg)' },
-        { title: 'Rework', color: '#87CEFA', images: 'url(/src/images/5-rework.jpg)' },
-        { title: 'End!', color: '#32CD32', images: 'url(/src/images/6-end.jpg)' },
-        { title: 'Minor Update', color: '#8A2BE2', images: 'url(/src/images/7-minorUpdate.jpg)' },
-        { title: 'Major Update', color: '#FF69B4', images: 'url(/src/images/8-majorUpdate.jpg)' }
+        { title: 'Notes', color: '#FFC864', images: 'url(src/images/1-notes.jpg)'},
+        { title: 'To Do', color: '#FF6347', images: 'url(src/images/2-todo.jpg)' },
+        { title: 'Progress', color: '#20B2AA', images: 'url(src/images/3-progress.jpg)' },
+        { title: 'Bugs', color: '#FF4500', images: 'url(src/images/4-bugs.jpg)' },
+        { title: 'Rework', color: '#87CEFA', images: 'url(src/images/5-rework.jpg)' },
+        { title: 'End!', color: '#32CD32', images: 'url(src/images/6-end.jpg)' },
+        { title: 'Minor Update', color: '#8A2BE2', images: 'url(src/images/7-minorUpdate.jpg)' },
+        { title: 'Major Update', color: '#FF69B4', images: 'url(src/images/8-majorUpdate.jpg)' }
     ];
 
     // Her başlık için yeni sütün oluşturma
